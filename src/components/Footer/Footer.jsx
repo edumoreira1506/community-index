@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBarItem from './../NavBarItem/NavBarItem'
+import SocialMediaLink from './../SocialMediaLink/SocialMediaLink'
 import './Footer.scss'
 
 const Footer = ({ links }) => (
@@ -8,7 +8,7 @@ const Footer = ({ links }) => (
       <ul className="footer__links__list">
         {links.map(({ title, to }) => (
           <li className="footer__links__list__item" key={title}>
-            <NavBarItem title={title} to={to} />
+            <SocialMediaLink title={title} to={to} />
             <span className="footer__links__list__item__bullet"></span>
           </li>
         ))}
